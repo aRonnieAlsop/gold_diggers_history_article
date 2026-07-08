@@ -1,0 +1,370 @@
+/* ==========================================================
+   Gold Diggers History Feature
+   Indian Valley Chamber of Commerce
+   Arron Alsop
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:#161310;
+    color:#f4efe7;
+    font-family:"Inter",sans-serif;
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+}
+
+/* ---------- Layout ---------- */
+
+.page{
+    width:100%;
+}
+
+.article,
+.callout,
+.signature,
+.buttons,
+.acknowledgments{
+    width:min(760px,90%);
+    margin:auto;
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
+    padding:90px 0 60px;
+    text-align:center;
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:4px;
+    color:#b79d67;
+    font-size:.82rem;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(3rem,8vw,5.5rem);
+    line-height:.95;
+    font-weight:600;
+    margin:0 auto 60px;
+    max-width:900px;
+}
+/* ---------- Hero Image ---------- */
+
+.hero-image{
+    width:min(560px,90%);
+    margin:0 auto;
+}
+
+.hero-image img{
+    width:100%;
+    display:block;
+    border-radius:4px;
+    box-shadow:0 30px 80px rgba(0,0,0,.45);
+}
+
+.hero-image figcaption{
+    margin-top:16px;
+    text-align:center;
+    font-size:.88rem;
+    color:#b6a895;
+    font-style:italic;
+}
+
+/* ---------- Typography ---------- */
+
+.article{
+    padding-bottom:40px;
+}
+
+.article p{
+    font-size:1.08rem;
+    color:#efe7dc;
+    margin:1.7rem 0;
+}
+
+.article h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2.7rem;
+    margin-top:4rem;
+    margin-bottom:1rem;
+    font-weight:600;
+}
+
+.lead{
+    font-size:1.35rem !important;
+    font-family:"Cormorant Garamond",serif;
+    line-height:1.6;
+}
+
+.lead::first-letter{
+    float:left;
+    font-size:4.8rem;
+    line-height:.82;
+    padding-right:12px;
+    padding-top:10px;
+    color:#c5a35d;
+    font-family:"Cormorant Garamond",serif;
+}
+
+.pull-line{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2rem !important;
+    line-height:1.35;
+    color:#ffffff;
+    margin:4rem auto;
+    text-align:center;
+    max-width:650px;
+}
+
+.statement{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2.15rem !important;
+    line-height:1.35;
+    text-align:center;
+    margin:3rem auto;
+    color:#ffffff;
+}
+
+.closing-line{
+    text-align:center;
+    font-family:"Cormorant Garamond",serif;
+    font-size:2.4rem !important;
+    margin:5rem auto;
+    color:#d7b166;
+}
+
+/* ---------- Images ---------- */
+
+.story-image{
+    width:min(560px,100%);
+    margin:70px auto;
+}
+
+.story-image.wide{
+    width:min(760px,100%);
+}
+
+.story-image img{
+    width:100%;
+    display:block;
+    border-radius:4px;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+    transition:transform .35s ease;
+}
+
+.story-image img:hover{
+    transform:scale(1.015);
+}
+
+.story-image figcaption{
+    margin-top:14px;
+    font-size:.88rem;
+    line-height:1.6;
+    color:#b7ab99;
+    font-style:italic;
+    text-align:center;
+}
+
+/* ---------- Notes ---------- */
+
+.source-note{
+    font-size:.88rem !important;
+    color:#aa9d8d;
+    font-style:italic;
+    border-left:2px solid #7d6540;
+    padding-left:18px;
+    margin:2.5rem 0;
+}
+
+/* ---------- Callout ---------- */
+
+.callout{
+    margin-top:90px;
+    margin-bottom:80px;
+    background:#201b17;
+    border:1px solid rgba(199,167,91,.28);
+    border-radius:10px;
+    padding:45px;
+}
+
+.callout h2{
+    margin-top:0;
+    font-family:"Cormorant Garamond",serif;
+    font-size:2.3rem;
+}
+
+.callout strong{
+    color:#d9b66b;
+}
+
+/* ---------- Signature ---------- */
+
+.signature{
+    text-align:center;
+    margin:80px auto 40px;
+}
+
+.signature p{
+    margin:.3rem;
+}
+
+.signature strong{
+    font-size:1.3rem;
+    font-family:"Cormorant Garamond",serif;
+}
+
+/* ---------- Buttons ---------- */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:90px;
+}
+
+.button{
+    display:inline-block;
+    padding:16px 32px;
+    text-decoration:none;
+    color:#161310;
+    background:#d1b16d;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#f4efe7;
+    transform:translateY(-3px);
+}
+
+/* ---------- Acknowledgments ---------- */
+
+.acknowledgments{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:60px 0 100px;
+}
+
+.acknowledgments h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:2.2rem;
+    margin-bottom:20px;
+}
+
+.acknowledgments p{
+    color:#b7ab99;
+    font-size:.96rem;
+    line-height:1.9;
+}
+
+/* ---------- Links ---------- */
+
+a{
+    color:#d6b56c;
+}
+
+a:hover{
+    color:#ffffff;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:900px){
+
+.hero{
+    padding-top:60px;
+}
+
+.hero h1{
+    font-size:3.6rem;
+}
+
+.article p{
+    font-size:1.02rem;
+}
+
+.pull-line{
+    font-size:1.7rem !important;
+}
+
+.statement{
+    font-size:1.9rem !important;
+}
+
+.callout{
+    padding:32px;
+}
+
+}
+
+@media (max-width:700px){
+
+.hero h1{
+    font-size:2.9rem;
+}
+
+.lead{
+    font-size:1.15rem !important;
+}
+
+.lead::first-letter{
+    font-size:4rem;
+}
+
+.article h2{
+    font-size:2.2rem;
+}
+
+.pull-line{
+    font-size:1.45rem !important;
+}
+
+.statement{
+    font-size:1.6rem !important;
+}
+
+.closing-line{
+    font-size:2rem !important;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.button{
+    width:100%;
+    text-align:center;
+}
+
+.callout{
+    padding:26px;
+}
+
+.story-image,
+.story-image.wide{
+    width:100%;
+}
+
+.hero-image{
+    width:100%;
+}
+
+}
