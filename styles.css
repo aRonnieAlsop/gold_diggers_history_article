@@ -355,6 +355,15 @@ a:hover{
     transition:.3s;
 }
 
+.article-date{
+    margin:18px 0 48px;
+    font-size:.82rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#9f9486;
+    font-family:"Inter",sans-serif;
+}
+
 .event-link:hover{
     background:#f4efe7;
     color:#161310;
